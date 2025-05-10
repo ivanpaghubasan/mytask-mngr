@@ -1,6 +1,6 @@
+.env
 node_modules/
-dist/         # Compiled TypeScript output directory
-.env          # Sensitive environment variables (redundant if excluded in root, but good to have for safety)
+dist/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

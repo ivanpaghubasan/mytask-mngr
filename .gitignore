@@ -1,6 +1,6 @@
-node_modules/ # If you accidentally run npm install in the root
-.env          # Sensitive environment variables
-.DS_Store     # macOS Desktop Services Store file
-Thumbs.db     # Windows thumbnail cache file
-.vscode/      # VS Code project settings (optional, but often excluded)
-.idea/        # IntelliJ IDEA project settings (optional, but often excluded)
+node_modules
+.env
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
