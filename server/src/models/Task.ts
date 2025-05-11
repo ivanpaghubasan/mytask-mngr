@@ -9,7 +9,7 @@ interface ITask extends Document {
 const TaskSchema: Schema = new Schema({
     title: { type: String, required: true },
     description: { type: String },
-    completed: { type: Boolean, default: true },
+    completed: { type: Boolean, default: false },
 }, { timestamps: true });
 
 const Task = mongoose.model<ITask>('Task', TaskSchema);
