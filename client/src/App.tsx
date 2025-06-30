@@ -1,15 +1,25 @@
-import AddTask from './components/AddTask';
+
+
+
+import Layout from './components/Layout';
+import { Route, Routes } from 'react-router-dom';
+import Login from './pages/Login';
 import TaskList from './components/TaskList';
 
 function App() {
     
 
     return (
-        <>
-            <h1>Task Manager</h1>
-            <AddTask />
-            <TaskList />
-        </>
+        <Routes>
+            <Route path='/' element={<Login />}/>
+
+            <Route>
+                <Route element={<Layout />}>
+                    <Route path='/tasks' element={<TaskList />}/>
+                </Route>
+            </Route>
+            <Route path="*" element={<h2>Page not found</h2>}/>
+        </Routes>
     );
 }
 
