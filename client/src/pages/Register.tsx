@@ -27,19 +27,19 @@ export default function Register() {
   return (
     <AuthFormWrapper title='Register'>
         <form className='space-y-4' onSubmit={handleSubmit}>
-            <div>
+            <div className='grid w-full max-w-sm items-center gap-3'>
                <Label htmlFor='username'>Username</Label>
                <Input name='username' value={form.username} onChange={handleChange} required />
             </div>
-            <div>
+            <div className='grid w-full max-w-sm items-center gap-3'>
                <Label htmlFor='email'>Email</Label>
                <Input name='email' type='email' value={form.email} onChange={handleChange} required />
             </div>
-            <div>
+            <div className='grid w-full max-w-sm items-center gap-3'>
                <Label htmlFor='password'>Password</Label>
                <Input name='password' type='password' value={form.password} onChange={handleChange} required />
             </div>
-            <Button className='w-full' type='submit'>Register</Button>
+            <Button className='w-full mt-3' type='submit'>Register</Button>
         </form>
         <p className="text-sm text-center text-muted-foreground mt-3">
         Already have an account? <Link to="/" className="text-blue-600">Login</Link>
